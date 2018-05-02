@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
-		64F38FA72099E53400B4D22D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* ViewController.swift */; };
-		64F38FAA2099E53400B4D22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FA82099E53400B4D22D /* Main.storyboard */; };
+		64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* HomeViewController.swift */; };
 		64F38FAC2099E53400B4D22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FAB2099E53400B4D22D /* Assets.xcassets */; };
 		64F38FAF2099E53400B4D22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FAD2099E53400B4D22D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,8 +16,7 @@
 /* Begin PBXFileReference section */
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F38FA42099E53400B4D22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64F38FA62099E53400B4D22D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64F38FA92099E53400B4D22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64F38FA62099E53400B4D22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64F38FAB2099E53400B4D22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64F38FAE2099E53400B4D22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64F38FB02099E53400B4D22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				64F38FA42099E53400B4D22D /* AppDelegate.swift */,
-				64F38FA62099E53400B4D22D /* ViewController.swift */,
-				64F38FA82099E53400B4D22D /* Main.storyboard */,
+				64F38FA62099E53400B4D22D /* HomeViewController.swift */,
 				64F38FAB2099E53400B4D22D /* Assets.xcassets */,
 				64F38FAD2099E53400B4D22D /* LaunchScreen.storyboard */,
 				64F38FB02099E53400B4D22D /* Info.plist */,
@@ -125,7 +122,6 @@
 			files = (
 				64F38FAF2099E53400B4D22D /* LaunchScreen.storyboard in Resources */,
 				64F38FAC2099E53400B4D22D /* Assets.xcassets in Resources */,
-				64F38FAA2099E53400B4D22D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F38FA72099E53400B4D22D /* ViewController.swift in Sources */,
+				64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */,
 				64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +140,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		64F38FA82099E53400B4D22D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64F38FA92099E53400B4D22D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64F38FAD2099E53400B4D22D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,6 +264,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FIREAIOT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarytorch.FIREAIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FIREAIOT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarytorch.FIREAIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
