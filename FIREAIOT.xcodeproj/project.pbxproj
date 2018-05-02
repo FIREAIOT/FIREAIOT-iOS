@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1EFE5FD057082A2E2F871E51 /* Pods_FIREAIOT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0DFB100F9012DA9253228 /* Pods_FIREAIOT.framework */; };
+		642CB21E2099F89A000DE6D1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB2192099F89A000DE6D1 /* UIColor.swift */; };
+		642CB21F2099F89A000DE6D1 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21A2099F89A000DE6D1 /* UINavigationBar.swift */; };
+		642CB2202099F89A000DE6D1 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21B2099F89A000DE6D1 /* UIStackView.swift */; };
+		642CB2212099F89A000DE6D1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21C2099F89A000DE6D1 /* UIView.swift */; };
+		642CB2222099F89A000DE6D1 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21D2099F89A000DE6D1 /* UserDefaults.swift */; };
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
 		64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* HomeViewController.swift */; };
 		64F38FAC2099E53400B4D22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FAB2099E53400B4D22D /* Assets.xcassets */; };
@@ -17,6 +22,11 @@
 /* Begin PBXFileReference section */
 		2C5ADDED66FC667324619CFA /* Pods-FIREAIOT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIREAIOT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT.release.xcconfig"; sourceTree = "<group>"; };
 		3A84A11FFB7EA3BFEB9BAD66 /* Pods-FIREAIOT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIREAIOT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT.debug.xcconfig"; sourceTree = "<group>"; };
+		642CB2192099F89A000DE6D1 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		642CB21A2099F89A000DE6D1 /* UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		642CB21B2099F89A000DE6D1 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		642CB21C2099F89A000DE6D1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		642CB21D2099F89A000DE6D1 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F38FA42099E53400B4D22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F38FA62099E53400B4D22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +48,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642CB2182099F89A000DE6D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				642CB2192099F89A000DE6D1 /* UIColor.swift */,
+				642CB21A2099F89A000DE6D1 /* UINavigationBar.swift */,
+				642CB21B2099F89A000DE6D1 /* UIStackView.swift */,
+				642CB21C2099F89A000DE6D1 /* UIView.swift */,
+				642CB21D2099F89A000DE6D1 /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		64F38F982099E53400B4D22D = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +81,7 @@
 		64F38FA32099E53400B4D22D /* FIREAIOT */ = {
 			isa = PBXGroup;
 			children = (
+				642CB2182099F89A000DE6D1 /* Extensions */,
 				64F38FA42099E53400B4D22D /* AppDelegate.swift */,
 				64F38FA62099E53400B4D22D /* HomeViewController.swift */,
 				64F38FAB2099E53400B4D22D /* Assets.xcassets */,
@@ -208,7 +231,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */,
+				642CB21E2099F89A000DE6D1 /* UIColor.swift in Sources */,
+				642CB2202099F89A000DE6D1 /* UIStackView.swift in Sources */,
 				64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */,
+				642CB2212099F89A000DE6D1 /* UIView.swift in Sources */,
+				642CB2222099F89A000DE6D1 /* UserDefaults.swift in Sources */,
+				642CB21F2099F89A000DE6D1 /* UINavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
