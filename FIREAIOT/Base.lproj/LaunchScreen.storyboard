@@ -26,13 +26,15 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yfO-Eb-tMz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BTr-yW-TuV"/>
                             <constraint firstItem="yfO-Eb-tMz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="a4d-zB-EY1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

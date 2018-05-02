@@ -11,21 +11,35 @@ import RevealingSplashView
 
 
 class HomeViewController: UIViewController {
-
+    // MARK: - Properties
+    
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         showSplashScreen()
+        setupNavigationBar()
         
-        title = "FIREAIOT"
         view.backgroundColor = .white
     }
     
+    // MARK: - Custom UI
     fileprivate func showSplashScreen() {
         guard let window = UIApplication.shared.keyWindow else { return }
         let revealingSplashView = RevealingSplashView(iconImage: #imageLiteral(resourceName: "logo"), iconInitialSize: CGSize(width: 200, height: 200), backgroundColor: .white)
         window.addSubview(revealingSplashView)
         revealingSplashView.startAnimation() { }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.title = "FIREAIOT"
+        navigationController?.navigationBar.lightContent()
+        navigationController?.navigationBar.gradient(colors: [.secondary, .primary])
     }
 }
 
