@@ -1,6 +1,6 @@
 //
 //  UIView.swift
-//  ManDoPick
+//  FIREAIOT
 //
 //  Created by Saleem on 20/12/17.
 //  Copyright © 2017 Binary Torch. All rights reserved.
