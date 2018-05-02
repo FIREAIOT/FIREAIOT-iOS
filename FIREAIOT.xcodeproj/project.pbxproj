@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EFE5FD057082A2E2F871E51 /* Pods_FIREAIOT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B0DFB100F9012DA9253228 /* Pods_FIREAIOT.framework */; };
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
 		64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* HomeViewController.swift */; };
 		64F38FAC2099E53400B4D22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FAB2099E53400B4D22D /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5ADDED66FC667324619CFA /* Pods-FIREAIOT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIREAIOT.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT.release.xcconfig"; sourceTree = "<group>"; };
+		3A84A11FFB7EA3BFEB9BAD66 /* Pods-FIREAIOT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIREAIOT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT.debug.xcconfig"; sourceTree = "<group>"; };
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F38FA42099E53400B4D22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F38FA62099E53400B4D22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		64F38FAB2099E53400B4D22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64F38FAE2099E53400B4D22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64F38FB02099E53400B4D22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B0DFB100F9012DA9253228 /* Pods_FIREAIOT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIREAIOT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFE5FD057082A2E2F871E51 /* Pods_FIREAIOT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				64F38FA32099E53400B4D22D /* FIREAIOT */,
 				64F38FA22099E53400B4D22D /* Products */,
+				FEAE2092B1E7169B4BA87A17 /* Pods */,
+				F11EC5EDBE0ABE071B3BFB22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = FIREAIOT;
 			sourceTree = "<group>";
 		};
+		F11EC5EDBE0ABE071B3BFB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B0DFB100F9012DA9253228 /* Pods_FIREAIOT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEAE2092B1E7169B4BA87A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A84A11FFB7EA3BFEB9BAD66 /* Pods-FIREAIOT.debug.xcconfig */,
+				2C5ADDED66FC667324619CFA /* Pods-FIREAIOT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64F38FB32099E53400B4D22D /* Build configuration list for PBXNativeTarget "FIREAIOT" */;
 			buildPhases = (
+				6D3A6695A5FE29155E1A9273 /* [CP] Check Pods Manifest.lock */,
 				64F38F9D2099E53400B4D22D /* Sources */,
 				64F38F9E2099E53400B4D22D /* Frameworks */,
 				64F38F9F2099E53400B4D22D /* Resources */,
+				07D828666456B4F7D3FA53BB /* [CP] Embed Pods Frameworks */,
+				F8F2288DCDADEFCCCE3EF4F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D828666456B4F7D3FA53BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D3A6695A5FE29155E1A9273 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F2288DCDADEFCCCE3EF4F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIREAIOT/Pods-FIREAIOT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64F38F9D2099E53400B4D22D /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		64F38FB42099E53400B4D22D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A84A11FFB7EA3BFEB9BAD66 /* Pods-FIREAIOT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +351,7 @@
 		};
 		64F38FB52099E53400B4D22D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5ADDED66FC667324619CFA /* Pods-FIREAIOT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

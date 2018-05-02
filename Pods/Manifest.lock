@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Alamofire-SwiftyJSON (3.0.0):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0.0)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
+  - DynamicBlurView (2.0.2)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - RevealingSplashView (0.5.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Alamofire-SwiftyJSON
+  - AlamofireNetworkActivityIndicator (~> 2.2)
+  - GoogleMaps
+  - NVActivityIndicatorView
+  - PopupDialog (~> 0.7)
+  - RevealingSplashView
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
+  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: b17c595c979a9355393cba7b552ba6030418d5fe
+
+COCOAPODS: 1.2.1
