@@ -13,6 +13,7 @@
 		642CB2202099F89A000DE6D1 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21B2099F89A000DE6D1 /* UIStackView.swift */; };
 		642CB2212099F89A000DE6D1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21C2099F89A000DE6D1 /* UIView.swift */; };
 		642CB2222099F89A000DE6D1 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB21D2099F89A000DE6D1 /* UserDefaults.swift */; };
+		642CB224209A00A6000DE6D1 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642CB223209A00A6000DE6D1 /* Env.swift */; };
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
 		64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* HomeViewController.swift */; };
 		64F38FAC2099E53400B4D22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F38FAB2099E53400B4D22D /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		642CB21B2099F89A000DE6D1 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		642CB21C2099F89A000DE6D1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		642CB21D2099F89A000DE6D1 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		642CB223209A00A6000DE6D1 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F38FA42099E53400B4D22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F38FA62099E53400B4D22D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				64F38FAB2099E53400B4D22D /* Assets.xcassets */,
 				64F38FAD2099E53400B4D22D /* LaunchScreen.storyboard */,
 				64F38FB02099E53400B4D22D /* Info.plist */,
+				642CB223209A00A6000DE6D1 /* Env.swift */,
 			);
 			path = FIREAIOT;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				642CB2202099F89A000DE6D1 /* UIStackView.swift in Sources */,
 				64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */,
 				642CB2212099F89A000DE6D1 /* UIView.swift in Sources */,
+				642CB224209A00A6000DE6D1 /* Env.swift in Sources */,
 				642CB2222099F89A000DE6D1 /* UserDefaults.swift in Sources */,
 				642CB21F2099F89A000DE6D1 /* UINavigationBar.swift in Sources */,
 			);
@@ -373,7 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarytorch.FIREAIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -389,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarytorch.FIREAIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
