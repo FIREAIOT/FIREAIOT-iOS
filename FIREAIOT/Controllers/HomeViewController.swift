@@ -8,51 +8,38 @@
 
 import UIKit
 import GoogleMaps
+import PopupDialog
 import RevealingSplashView
 
-class HomeViewController: UIViewController {
-    // MARK: - Properties
-    private let confirmButton: Button = {
-        let button = Button(title: "Send Fire Alarm", type: .primary)
-        return button
-    }()
+class HomeViewController: UIViewController, Authorizable {
+    // MARK: - prperties
+    private let homeView = HomeView()
     
-    // MARK: - Life cycle
+    // MARK: - lifecyvle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showSplashScreen()
+        view = homeView
+        
         setupNavigationBar()
-        setupViews()
-        setupUIConstraints()
         
-        view.backgroundColor = .white
+        showSplashScreen()
     }
     
-    override func loadView() {
-        super.loadView()
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.authenticate()
     }
     
-    // MARK: - Custom UI
-    fileprivate func setupViews() {
-        view.addSubview(confirmButton)
-    }
-    
-    fileprivate func setupUIConstraints() {
-        _ = confirmButton.set(left: view.leftAnchor, constant: UIConstants.Edges.leadingMargin)
-        _ = confirmButton.set(right: view.rightAnchor, constant: UIConstants.Edges.trailingMargin)
-        _ = confirmButton.set(bottom: view.bottomAnchor, constant: -50)
-        _ = confirmButton.set(height: UIConstants.Buttons.height)
+    // MARK: - custom ui
+    private func presentPopupAlert(withTitle title: String, message: String) {
+        let popup = PopupDialog(title: title, message: message)
+        let button = CancelButton(title: "Okay", action: nil)
+        button.backgroundColor = .primary
+        button.tintColor = .white
+        button.titleColor = .white
+        popup.addButton(button)
+        self.present(popup, animated: true, completion: nil)
     }
     
     fileprivate func showSplashScreen() {
@@ -72,4 +59,3 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.gradient(colors: [.secondary, .primary])
     }
 }
-
