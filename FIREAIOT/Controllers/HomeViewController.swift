@@ -12,7 +12,10 @@ import RevealingSplashView
 
 class HomeViewController: UIViewController {
     // MARK: - Properties
-    
+    private let confirmButton: Button = {
+        let button = Button(title: "Send Fire Alarm", type: .primary)
+        return button
+    }()
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -20,6 +23,8 @@ class HomeViewController: UIViewController {
         
         showSplashScreen()
         setupNavigationBar()
+        setupViews()
+        setupUIConstraints()
         
         view.backgroundColor = .white
     }
@@ -39,6 +44,17 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: - Custom UI
+    fileprivate func setupViews() {
+        view.addSubview(confirmButton)
+    }
+    
+    fileprivate func setupUIConstraints() {
+        _ = confirmButton.set(left: view.leftAnchor, constant: UIConstants.Edges.leadingMargin)
+        _ = confirmButton.set(right: view.rightAnchor, constant: UIConstants.Edges.trailingMargin)
+        _ = confirmButton.set(bottom: view.bottomAnchor, constant: -50)
+        _ = confirmButton.set(height: UIConstants.Buttons.height)
+    }
+    
     fileprivate func showSplashScreen() {
         guard let window = UIApplication.shared.keyWindow else { return }
         let revealingSplashView = RevealingSplashView(iconImage: #imageLiteral(resourceName: "logo"), iconInitialSize: CGSize(width: 200, height: 200), backgroundColor: .white)
