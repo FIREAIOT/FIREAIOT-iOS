@@ -35,6 +35,7 @@ struct Server {
         case register(name: String, email: String, password: String, mobile: String)
         case logout
         case profile
+        case fireAlarm(latitude: String, longitude: String)
     }
     
     static func getRoute(route: Routes) -> Route {
@@ -61,6 +62,11 @@ struct Server {
             routeObject = Route(url: apiUrl + "users", method: .get, headers: authHeaders(), parameters: [:])
         case .logout:
             routeObject = Route(url: apiUrl + "logout", method: .post, headers: authHeaders(), parameters: [:])
+        case let .fireAlarm(latitude, longitude):
+            routeObject = Route(url: apiUrl + "alarms", method: .post, headers: authHeaders(), parameters: [
+                "latitude"  : latitude,
+                "longitude" : longitude,
+                ])
         }
         
         return routeObject

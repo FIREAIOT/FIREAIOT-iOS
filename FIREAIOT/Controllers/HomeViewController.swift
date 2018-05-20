@@ -10,6 +10,7 @@ import UIKit
 import GoogleMaps
 import PopupDialog
 import RevealingSplashView
+import NVActivityIndicatorView
 
 class HomeViewController: UIViewController, Authorizable {
     // MARK: - prperties
@@ -20,6 +21,7 @@ class HomeViewController: UIViewController, Authorizable {
         super.viewDidLoad()
         
         view = homeView
+        homeView.delegate = self
         
         setupNavigationBar()
         
@@ -57,5 +59,22 @@ class HomeViewController: UIViewController, Authorizable {
         navigationItem.title = "FIREAIOT"
         navigationController?.navigationBar.lightContent()
         navigationController?.navigationBar.gradient(colors: [.secondary, .primary])
+    }
+}
+
+extension HomeViewController: HomeViewDelegate {
+    func sendFireButtonDidPressedWith(latitude: String, longitude: String) {
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData(type: .ballRotateChase))
+        NVActivityIndicatorPresenter.sharedInstance.setMessage("Sending fire alarm..")
+        
+        FireAlarmController.shared.store(latitude: latitude, longitude: longitude) { (success) in
+            NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+            
+            if(success) {
+                self.presentPopupAlert(withTitle: "Alarm Received", message: "Thank you for your contribution, we will send an assistance as soon as possible!")
+            }else {
+                self.presentPopupAlert(withTitle: "Something went wrong!", message: "Please try again later!")
+            }
+        }
     }
 }

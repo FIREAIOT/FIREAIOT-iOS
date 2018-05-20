@@ -11,6 +11,10 @@ import GoogleMaps
 
 var userLocation = CLLocationCoordinate2D(latitude: -33.869405, longitude: 151.199)
 
+protocol HomeViewDelegate {
+    func sendFireButtonDidPressedWith(latitude: String, longitude: String)
+}
+
 class HomeView: BaseView {
     // MARK: - properties
     private let confirmButton: Button = {
@@ -33,6 +37,9 @@ class HomeView: BaseView {
     private var zoomLevel: Float = 15.0
     private var cameraCanFollowUserLocation = true
     private var locationManager = CLLocationManager()
+    
+    // MARK: - delegate
+    var delegate: HomeViewDelegate?
     
     // MARK: - life cycle
     override init(frame: CGRect) {
@@ -77,7 +84,7 @@ class HomeView: BaseView {
     
     // MARK: - handlers
     @objc func confirmButtonDidPressed(_ sender: UIButton) {
-        print("did pressed")
+        delegate?.sendFireButtonDidPressedWith(latitude: "\(userLocation.latitude)", longitude: "\(userLocation.longitude)")
     }
     
     // MARK: - location manager
