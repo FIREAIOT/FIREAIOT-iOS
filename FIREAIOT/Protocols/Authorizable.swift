@@ -14,28 +14,12 @@ protocol Authorizable {
 
 extension Authorizable where Self: UIViewController {
     func authenticate() {
-//        handleUserAuthentication()
-        
-//        handleMobilePhoneAuthorization()
+        handleUserAuthentication()
     }
     
-//    func handleUserAuthentication() {
-//        guard Auth.shared.guest() else { return }
-//
-//        var viewController: UIViewController!
-//
-//        if App.shared.language == nil {
-//            viewController = LaunchViewController()
-//        }else {
-//            viewController = LoginViewController()
-//        }
-//
-//        present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
-//    }
-//
-//    func handleMobilePhoneAuthorization() {
-//        guard Auth.shared.check() && Auth.shared.currentUser()?.confirmed == false else { return }
-//
-//        present(UINavigationController(rootViewController: MobileVerificationViewController()), animated: true, completion: nil)
-//    }
+    func handleUserAuthentication() {
+        guard Auth.shared.guest() else { return }
+
+        present(UINavigationController(rootViewController: LoginViewController()), animated: true, completion: nil)
+    }
 }

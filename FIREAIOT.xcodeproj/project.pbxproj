@@ -53,6 +53,17 @@
 		64318B9420A1CE2400ADE9F7 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64318B9320A1CE2400ADE9F7 /* UIConstants.swift */; };
 		64318B9920A1CE8400ADE9F7 /* Authorizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64318B9720A1CE8400ADE9F7 /* Authorizable.swift */; };
 		64318B9A20A1CE8400ADE9F7 /* Frameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64318B9820A1CE8400ADE9F7 /* Frameable.swift */; };
+		6444410720B1B11900308CD4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410520B1B11800308CD4 /* RegisterViewController.swift */; };
+		6444410820B1B11900308CD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410620B1B11900308CD4 /* LoginViewController.swift */; };
+		6444410B20B1B13700308CD4 /* RegisterFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410920B1B13700308CD4 /* RegisterFormController.swift */; };
+		6444410C20B1B13700308CD4 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410A20B1B13700308CD4 /* LoginFormController.swift */; };
+		6444410F20B1B18400308CD4 /* AuthErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410D20B1B18400308CD4 /* AuthErrorCodes.swift */; };
+		6444411020B1B18400308CD4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410E20B1B18400308CD4 /* Auth.swift */; };
+		6444411320B1B18A00308CD4 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411120B1B18A00308CD4 /* Route.swift */; };
+		6444411420B1B18A00308CD4 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411220B1B18A00308CD4 /* Server.swift */; };
+		6444411A20B1B27800308CD4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411520B1B27700308CD4 /* Location.swift */; };
+		6444411D20B1B27800308CD4 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411820B1B27800308CD4 /* Trip.swift */; };
+		6444411E20B1B27800308CD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411920B1B27800308CD4 /* User.swift */; };
 		6489F61C20A4BD6700E5B2D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489F61B20A4BD6700E5B2D6 /* HomeView.swift */; };
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
 		64F38FA72099E53400B4D22D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA62099E53400B4D22D /* HomeViewController.swift */; };
@@ -108,6 +119,17 @@
 		64318B9320A1CE2400ADE9F7 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		64318B9720A1CE8400ADE9F7 /* Authorizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorizable.swift; sourceTree = "<group>"; };
 		64318B9820A1CE8400ADE9F7 /* Frameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frameable.swift; sourceTree = "<group>"; };
+		6444410520B1B11800308CD4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6444410620B1B11900308CD4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6444410920B1B13700308CD4 /* RegisterFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFormController.swift; sourceTree = "<group>"; };
+		6444410A20B1B13700308CD4 /* LoginFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		6444410D20B1B18400308CD4 /* AuthErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthErrorCodes.swift; sourceTree = "<group>"; };
+		6444410E20B1B18400308CD4 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		6444411120B1B18A00308CD4 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		6444411220B1B18A00308CD4 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		6444411520B1B27700308CD4 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6444411820B1B27800308CD4 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		6444411920B1B27800308CD4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6489F61B20A4BD6700E5B2D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F38FA42099E53400B4D22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				64F38FA42099E53400B4D22D /* AppDelegate.swift */,
+				6444410E20B1B18400308CD4 /* Auth.swift */,
+				6444411220B1B18A00308CD4 /* Server.swift */,
+				6444411120B1B18A00308CD4 /* Route.swift */,
+				6444410D20B1B18400308CD4 /* AuthErrorCodes.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -155,6 +181,8 @@
 			children = (
 				64318B4D20A1CD2300ADE9F7 /* Core */,
 				64F38FA62099E53400B4D22D /* HomeViewController.swift */,
+				6444410620B1B11900308CD4 /* LoginViewController.swift */,
+				6444410520B1B11800308CD4 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				64318B4E20A1CD6A00ADE9F7 /* Section.swift */,
+				6444411520B1B27700308CD4 /* Location.swift */,
+				6444411820B1B27800308CD4 /* Trip.swift */,
+				6444411920B1B27800308CD4 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +299,8 @@
 			children = (
 				64318B9220A1CDA500ADE9F7 /* Core */,
 				6489F61B20A4BD6700E5B2D6 /* HomeView.swift */,
+				6444410A20B1B13700308CD4 /* LoginFormController.swift */,
+				6444410920B1B13700308CD4 /* RegisterFormController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,12 +360,12 @@
 		64F38FA32099E53400B4D22D /* FIREAIOT */ = {
 			isa = PBXGroup;
 			children = (
-				64318B9620A1CE8400ADE9F7 /* Protocols */,
 				64318B3D20A1CCEF00ADE9F7 /* App */,
+				64318B3E20A1CD0400ADE9F7 /* Controllers */,
 				64318B5020A1CD7200ADE9F7 /* Models */,
 				64318B9120A1CD9300ADE9F7 /* Views */,
-				64318B3E20A1CD0400ADE9F7 /* Controllers */,
 				64318B9520A1CE3400ADE9F7 /* Helpers */,
+				64318B9620A1CE8400ADE9F7 /* Protocols */,
 				642CB2182099F89A000DE6D1 /* Extensions */,
 				64F38FAB2099E53400B4D22D /* Assets.xcassets */,
 				64F38FAD2099E53400B4D22D /* LaunchScreen.storyboard */,
@@ -500,13 +533,19 @@
 				64318B7A20A1CD8700ADE9F7 /* Spacer.swift in Sources */,
 				64318B7E20A1CD8700ADE9F7 /* HorizontalDevider.swift in Sources */,
 				64318B7520A1CD8700ADE9F7 /* List.swift in Sources */,
+				6444411A20B1B27800308CD4 /* Location.swift in Sources */,
+				6444411D20B1B27800308CD4 /* Trip.swift in Sources */,
+				6444410820B1B11900308CD4 /* LoginViewController.swift in Sources */,
 				64318B4620A1CD1F00ADE9F7 /* DatasourceController.swift in Sources */,
 				64318B7C20A1CD8700ADE9F7 /* TextView.swift in Sources */,
 				64318B8220A1CD8700ADE9F7 /* BadgeViewPresenter.swift in Sources */,
 				642CB2202099F89A000DE6D1 /* UIStackView.swift in Sources */,
 				64318B4C20A1CD1F00ADE9F7 /* DefaultHeader.swift in Sources */,
 				64318B7D20A1CD8700ADE9F7 /* BaseView.swift in Sources */,
+				6444410B20B1B13700308CD4 /* RegisterFormController.swift in Sources */,
 				64318B8720A1CD8700ADE9F7 /* SegmentCellWithImage.swift in Sources */,
+				6444411E20B1B27800308CD4 /* User.swift in Sources */,
+				6444411320B1B18A00308CD4 /* Route.swift in Sources */,
 				64318B7720A1CD8700ADE9F7 /* ListItemCell.swift in Sources */,
 				64318B8120A1CD8700ADE9F7 /* Label.swift in Sources */,
 				6489F61C20A4BD6700E5B2D6 /* HomeView.swift in Sources */,
@@ -517,15 +556,19 @@
 				642CB2212099F89A000DE6D1 /* UIView.swift in Sources */,
 				64318B8A20A1CD8700ADE9F7 /* SegmentCellWithImageOverLabel.swift in Sources */,
 				64318B7620A1CD8700ADE9F7 /* ListItem.swift in Sources */,
+				6444410720B1B11900308CD4 /* RegisterViewController.swift in Sources */,
 				64318B8020A1CD8700ADE9F7 /* ButtonTypes.swift in Sources */,
+				6444411420B1B18A00308CD4 /* Server.swift in Sources */,
 				64318B4820A1CD1F00ADE9F7 /* Datasource.swift in Sources */,
 				64318B8B20A1CD8700ADE9F7 /* SegmentCellWithImageUnderLabel.swift in Sources */,
 				64318B9420A1CE2400ADE9F7 /* UIConstants.swift in Sources */,
 				64318B8320A1CD8700ADE9F7 /* BadgeWithCounterView.swift in Sources */,
 				64318B8820A1CD8700ADE9F7 /* SegmentCellWithImageAfterLabel.swift in Sources */,
 				64318B3C20A1CB8A00ADE9F7 /* Env.swift in Sources */,
+				6444411020B1B18400308CD4 /* Auth.swift in Sources */,
 				64318B4F20A1CD6A00ADE9F7 /* Section.swift in Sources */,
 				642CB2222099F89A000DE6D1 /* UserDefaults.swift in Sources */,
+				6444410F20B1B18400308CD4 /* AuthErrorCodes.swift in Sources */,
 				64318B9A20A1CE8400ADE9F7 /* Frameable.swift in Sources */,
 				64318B7820A1CD8700ADE9F7 /* ListItemIndicator.swift in Sources */,
 				642CB21F2099F89A000DE6D1 /* UINavigationBar.swift in Sources */,
@@ -534,6 +577,7 @@
 				64318B8E20A1CD8700ADE9F7 /* UIView+Appearance.swift in Sources */,
 				64318B8D20A1CD8700ADE9F7 /* RoundImageView.swift in Sources */,
 				64318B9920A1CE8400ADE9F7 /* Authorizable.swift in Sources */,
+				6444410C20B1B13700308CD4 /* LoginFormController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
