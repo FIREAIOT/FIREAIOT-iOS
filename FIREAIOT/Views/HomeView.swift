@@ -78,7 +78,7 @@ class HomeView: BaseView {
     override func setupUIConstraints() {
         _ = confirmButton.set(left: leftAnchor, constant: UIConstants.Edges.leadingMargin)
         _ = confirmButton.set(right: rightAnchor, constant: UIConstants.Edges.trailingMargin)
-        _ = confirmButton.set(bottom: bottomAnchor, constant: -50)
+        _ = confirmButton.set(bottom: bottomAnchor, constant: -20)
         _ = confirmButton.set(height: UIConstants.Buttons.height)
     }
     
