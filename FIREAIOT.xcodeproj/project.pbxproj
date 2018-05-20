@@ -61,8 +61,6 @@
 		6444411020B1B18400308CD4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444410E20B1B18400308CD4 /* Auth.swift */; };
 		6444411320B1B18A00308CD4 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411120B1B18A00308CD4 /* Route.swift */; };
 		6444411420B1B18A00308CD4 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411220B1B18A00308CD4 /* Server.swift */; };
-		6444411A20B1B27800308CD4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411520B1B27700308CD4 /* Location.swift */; };
-		6444411D20B1B27800308CD4 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411820B1B27800308CD4 /* Trip.swift */; };
 		6444411E20B1B27800308CD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6444411920B1B27800308CD4 /* User.swift */; };
 		6489F61C20A4BD6700E5B2D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6489F61B20A4BD6700E5B2D6 /* HomeView.swift */; };
 		64F38FA52099E53400B4D22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F38FA42099E53400B4D22D /* AppDelegate.swift */; };
@@ -127,8 +125,6 @@
 		6444410E20B1B18400308CD4 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		6444411120B1B18A00308CD4 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		6444411220B1B18A00308CD4 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		6444411520B1B27700308CD4 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		6444411820B1B27800308CD4 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		6444411920B1B27800308CD4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6489F61B20A4BD6700E5B2D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		64F38FA12099E53400B4D22D /* FIREAIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIREAIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				64318B4E20A1CD6A00ADE9F7 /* Section.swift */,
-				6444411520B1B27700308CD4 /* Location.swift */,
-				6444411820B1B27800308CD4 /* Trip.swift */,
 				6444411920B1B27800308CD4 /* User.swift */,
 			);
 			path = Models;
@@ -533,8 +527,6 @@
 				64318B7A20A1CD8700ADE9F7 /* Spacer.swift in Sources */,
 				64318B7E20A1CD8700ADE9F7 /* HorizontalDevider.swift in Sources */,
 				64318B7520A1CD8700ADE9F7 /* List.swift in Sources */,
-				6444411A20B1B27800308CD4 /* Location.swift in Sources */,
-				6444411D20B1B27800308CD4 /* Trip.swift in Sources */,
 				6444410820B1B11900308CD4 /* LoginViewController.swift in Sources */,
 				64318B4620A1CD1F00ADE9F7 /* DatasourceController.swift in Sources */,
 				64318B7C20A1CD8700ADE9F7 /* TextView.swift in Sources */,

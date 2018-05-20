@@ -1,6 +1,6 @@
 //
 //  LoginFormController.swift
-//  ManDoPick
+//  FIREAIOT
 //
 //  Created by Saleem Hadad on 28/12/2017.
 //  Copyright © 2017 Binary Torch. All rights reserved.
