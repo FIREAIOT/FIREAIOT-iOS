@@ -11,8 +11,6 @@ import Foundation
 extension UserDefaults {
     enum Keys: String {
         case accessToken = "accessToken"
-        case language    = "language"
-        case requestId   = "requestId"
         case user        = "currentUser"
     }
     
@@ -22,16 +20,6 @@ extension UserDefaults {
         }
         set {
             set(newValue, forKey: "\(Keys.accessToken.rawValue)")
-            synchronize()
-        }
-    }
-    
-    var requestId: String? {
-        get {
-            return string(forKey: Keys.requestId.rawValue)
-        }
-        set {
-            set(newValue, forKey: "\(Keys.requestId.rawValue)")
             synchronize()
         }
     }

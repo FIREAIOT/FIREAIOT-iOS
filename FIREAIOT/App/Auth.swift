@@ -34,15 +34,6 @@ class Auth {
         }
     }
     
-    var requestId: String {
-        get {
-            return UserDefaults.standard.requestId ?? ""
-        }
-        set {
-            UserDefaults.standard.requestId = newValue
-        }
-    }
-    
     func check() -> Bool {
         return currentUser() != nil
     }
@@ -107,7 +98,6 @@ class Auth {
             print(value)
             switch statusCode {
             case 200:
-                self?.requestId = value["data"]["requestId"].stringValue
                 self?.changeAuthStatus(status: .registered)
                 self?.login(withEmail: email, password: password, callback: callback)
             case 422:
