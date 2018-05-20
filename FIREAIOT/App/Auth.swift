@@ -52,7 +52,7 @@ class Auth {
         Alamofire.request(route.url, method: route.method, parameters: route.parameters, headers: route.headers).responseSwiftyJSON { [weak self] (data) in
             guard let value = data.value else { return callback(nil, .UnknownError) }
             guard let statusCode = data.response?.statusCode else { return callback(nil, .UnknownError) }
-            
+            print(value)
             switch statusCode {
             case 200:
                 do{
