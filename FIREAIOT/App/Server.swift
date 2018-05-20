@@ -10,9 +10,9 @@ import Alamofire
 import Foundation
 
 struct Server {
-    static private let baseUrl = "https://fireaiot.com/"
+    static private let baseUrl = "https://fireaiot.saleemhadad.me/"
     static private let apiUrl = baseUrl + "api/v1/"
-    static private let clientSecret = ""
+    static private let clientSecret = Env.clientSecret
     
     static private let defaultHeaders: HTTPHeaders = [
         "Accept"       : "application/json"
